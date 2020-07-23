@@ -8,7 +8,7 @@ submitted by:
 ```
 
 #### task 1 
-shell script for counting the number from file and analysis . 
+shell script for counting the number lines  from file and analysis . 
  
 ```sh
 source ./gen_random_lines.sh | source ./line_count.sh
