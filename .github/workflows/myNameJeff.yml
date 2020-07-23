@@ -1,0 +1,14 @@
+name: my name jeff
+
+on:
+  push:
+    braches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: build
+        run:  ls && source ./make.sh
