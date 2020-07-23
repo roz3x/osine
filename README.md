@@ -23,5 +23,8 @@ cd vp && source ./run.sh
 
 #### task 3 
 simulating on linux machine 
+```sh
+source ./make.sh
+```
 
-here is log of the above mentioned scripts 
+here is log of the above mentioned scripts [rickroll](https://github.com/roz3x/osine/runs/902234194?check_suite_focus=true)
