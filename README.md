@@ -1,6 +1,9 @@
 ### project work of os
 
-submitted by:
+#### source 
+the source code and run logs are avilable @[github](https://github.com/roz3x/osine/)
+
+#### submitted by:
 ```
 * ishant kumar     ( 185501 )
 * vishal guleria   ( 185511 )
