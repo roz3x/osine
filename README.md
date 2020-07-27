@@ -32,6 +32,19 @@ and shows the output as
 ```sh
 echo total  ${#l[@]} lines
 ```
+version 2 
+```sh
+wc -l -
+```
+reads from stdin and displays only the number of lines
+
+vesrion 3
+c program with delemiter '\n'
+```c
+ while (getline(&buff,&len,stdin)>=1) line_count++;
+```
+
+
 
 #### task 2 
 analysis of 2 different programs 
@@ -75,6 +88,23 @@ do
 		echo  -ne "cat $(cat /dev/random | head -c5 | xxd -p -l 50 ) $(cat /dev/random | head -c$( echo $n ) | xxd -p -l 50 )\n"  >> $filename
 	fi
 done
+```
+also to geneate a random assembly file for this specific use case 
+```sh
+num=10
+filename="input.asm"
+touch $filename
+idx=0
+for ((i=0;i<$num;i++ ))
+do
+        idx=$(($idx+ $RANDOM%15 ))
+        echo -ne "SET $i  $idx\n" >> $filename
+done
+echo -ne "MOV 1 $num\n" >> $filename
+echo -ne "MOV 7 $num\n" >> $filename
+echo -ne "MOV 2 0\n" >> $filename
+echo -ne "MOV 3 $RANDOM\n" >> $filename
+echo -ne "PRINT\nXCMP\nJMP\nEXIT\n" >> $filename
 ```
 
 #### task 3 
